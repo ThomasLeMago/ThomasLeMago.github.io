@@ -1,0 +1,44 @@
+.btn {
+    background-color: lightblue;
+    border: solid lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: cyan;
+    border: solid cyan;
+}
+
+.btn.btn-black {
+    background-color: black;
+    color: white;
+    border: solid black;
+}
+
+.btn.btn-black:active {
+    background-color: darkgray;
+    border: solid darkgray;
+}
+
+.btn.btn-blue {
+    background-color: cornflowerblue;
+    color: white;
+    border: solid cornflowerblue;
+}
+
+.btn.btn-blue:active {
+    background-color: aquamarine;
+    border: solid aquamarine;
+}
+
+.btn.btn-coral {
+    background-color: coral;
+    color: white;
+    border: solid coral;
+}
+
+.btn.btn-coral:active {
+    background-color: orangered;
+    border: solid orangered;
+}
