@@ -4,69 +4,46 @@ body{
     background-color: #2d2d2d;
     color: white;
     font-family: "Poppins", sans-serif;
-    max-height: 100vh;
-    overflow: hidden;
+    cursor: url("./circle.svg"), auto;
 }
 
-.title{
-    position: absolute;
-    top: 5%;
-    left: 6%;
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
 }
 
-.description{
-    position: absolute;
-    top: 13%;
-    left: 8%;
+*::-webkit-scrollbar {
+    display: none;
 }
 
-div.spe{
-    position: absolute;
-    top: 18%;
-    left: 8%;
-    height: 15%;
-    font-size: large;
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
-li.spe1{
-    position: absolute;
-    top: 60%;
-    left: 12%;
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
 }
 
-li.spe2{
-    position: absolute;
-    top: 80%;
-    left: 12%;
-}
-
-li.spe3{
-    position: absolute;
-    top: 100%;
-    left: 12%;
-}
-
-.samplecode{
-    position: absolute;
-    top: 10%;
-    left: 55%;
-    color: black;
-    font-size: x-large;
-    width: 25%;
-}
-
-span.tab{
-    color: white;
+.show{
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .projects{
-    position: absolute;
-    left: 15%;
-    top: 60%;
-    width: 30%;
-}
-
-.projectbtns{
     display: flex;
     justify-content: space-evenly;
 }
+
+.project{
+    padding: 10px;
+    margin: 10px;
+}
+

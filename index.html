@@ -7,35 +7,29 @@
     <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="borderdivs.css">
     <link rel="stylesheet" href="style.css">
+    <script defer src="./app.js"></script>
     <title>Thomas Le Magoariec</title>
 </head>
 <body>
-    <h1 class="title">Thomas Le Magoariec</h1>
-    <h3 class="description">Elève de première à Notre Dame de Bellegarde</h3>
-    <div class="spe">
-        <h3>Mes Spécialitées:</h3>
-        <li class="spe1">NSI</li>
-        <li class="spe2">Math</li>
-        <li class="spe3">LLCE</li>
-    </div>
+    <section class="hidden">
+        <h1 class="title">Thomas Le Magoariec</h1>
+        <h3>Scroll to discover</h3>
+    </section>
 
-    <div class="bordered-div pad fill samplecode">
-        <code>
-            <p>print("Hello World!")</p>
-            <p>if coffee == "brewed":</p>
-            <p><span class="tab">____</span>work()</p>
-            <p>else:</p>
-                <p><span class="tab">____</span>brewCoffee()</p>
-        </code>
-    </div>
-    <div class="projects bordered-div pad">
-        <h1>Mes Projets</h1>
-        <div class="projectbtns">
-            <button class="btn btn-black" style="font-size: larger;">CSS Sheets</button>
-            <button class="btn btn-black" style="font-size: larger;">Code Gen</button>
-            <button class="btn btn-black" style="font-size: larger;">Mon Github</button>
+    <section class="hidden">
+        <h3>Elève en première general</h3>
+        <h4>Mes spécialitées: NSI, math et LLCE</h4>
+    </section>
+
+    <section class="hidden">
+        <div class="bordered-div pad">
+            <h1>Mes Projets</h1>
+            <div class="projects">
+                <div class="projectdiv"><button class="project btn btn-black">CSS Sheets</button></div>
+                <div class="projectdiv"><button class="project btn btn-black">Code Gen</button></div>
+                <div class="projectdiv"><button class="project btn btn-black">GitHub</button></div>
+            </div>
         </div>
-        
-    </div>
+    </section>
 </body>
 </html>
