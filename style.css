@@ -6,6 +6,10 @@ body {
     cursor: url("./circle.svg"), auto;
 }
 
+:root {
+    --max-width: 30%;
+}
+
 * {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -67,14 +71,14 @@ section {
 }
 
 .passions {
-    max-width: 30%;
+    max-width: calc(var(--max-width));
 }
 
 .lists {
     padding: 30px;
     display: flex;
     justify-content: space-evenly;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
 }
 
 .lists:hover {
